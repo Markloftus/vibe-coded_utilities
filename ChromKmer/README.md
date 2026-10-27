@@ -11,3 +11,6 @@ Ever wonder how many chromosomes are in your fastq/fastq.gz file? Look no furthe
 # Do you have only one file?
   ./chromkmer --fastq sample.fastq.gz \
   --library human.markers.tsv --threads 8 --output results/sample
+
+# Do you have something that is not human?
+You will need to build a new --library of unique kmers found on each of your species chromosomes. So as of right now I am only supporting human chromosome copy numbers. 
